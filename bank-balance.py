@@ -18,10 +18,8 @@ class BankAccount():
             return f"Withdraw ${amount}. New balance: ${self.balance}"
 
 account = BankAccount("John", 100)
+account.deposit_amount(1000)
 print(account.show_balance())
-account.deposit_amount(50)
-print(account.show_balance())
-account.withdraw(300)
-print(account.show_balance())
-account.withdraw(30)
+account.withdraw(200)
+account.withdraw(500)
 print(account.show_balance())
