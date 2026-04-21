@@ -32,10 +32,12 @@ class Contact():
 
 john = Contact("John", "0948296")
 athena = Contact("Athena", "0951450")
+eloise = Contact("Eloise", "John")
 
 data = {
     "John": john.to_dict(),
-    "Athena": athena.to_dict()
+    "Athena": athena.to_dict(),
+    "Eloise": eloise.to_dict()
 }
 
 json.dump(data, open(FILE_NAME, "w"))
